@@ -40,6 +40,6 @@ output "_04_initiate_sql_listner_connection" {
 }
    
 output "_07_sql_client_command" {
-  value = "psql \"host=127.0.0.1 port=5432 sslmode=disable dbname=${google_sql_database.records_db.name} user=${google_sql_user.user_dev_access.name}\""
+  value = "psql \"host=127.0.0.1 port=5432 sslmode=disable dbname=${google_sql_database.records_db.name} user=USERNAME\""
  
 }
