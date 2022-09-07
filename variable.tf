@@ -48,14 +48,16 @@ variable "cloud_sql_proxy_version" {
 variable "proxy_access_identities" {
   description = "List of identities who require access to the SQL proxy, and database.  Every identity should be prefixed with the type, for example user:, serviceAccount: and/or group:"
   type        = string
-  default     = "user:admin@manishkgaur.altostrat.com"
+  default     = "user:USEREMAIL"
+ # example "user:abc@xyz.com"
 }
 
 
 variable "enable_ssh_access" {
   description = "Allow SSH access to the VM.  This will enable SSH access for all identities, so be careful when enabling this."
   type        = string
-  default     = "user:admin@manishkgaur.altostrat.com"
+  default     = "user:USEREMAIL"
+ # example "user:abc@xyz.com"
 }
 
  variable network_region {
