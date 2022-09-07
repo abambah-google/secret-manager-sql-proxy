@@ -28,7 +28,7 @@ resource "random_string" "id" {
 # Create the Project
 resource "google_project" "demo_project" {
   project_id      = "${var.demo_project_id}${random_string.id.result}"
-  name            = "Secret Manager Demo"
+  name            = "Secret Manager SQL-Proxy Demo"
   billing_account = var.billing_account
   folder_id = google_folder.terraform_solution.name
   depends_on = [
