@@ -93,7 +93,7 @@ resource "google_compute_global_address" "sql_instance_private_ip" {
   name          = "sql-private-address"
   purpose       = "VPC_PEERING"
   address_type  = "INTERNAL"
-  prefix_length = 16
+  prefix_length = 24
   network       = google_compute_network.host_network.id
   project = google_project.demo_project.project_id
   description = "Cloud SQL IP Range"
