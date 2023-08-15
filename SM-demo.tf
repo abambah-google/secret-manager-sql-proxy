@@ -21,7 +21,7 @@ resource "random_string" "id" {
   length = 4
   upper   = false
   lower   = true
-  number  = true
+  numeric  = true
   special = false
  }
 
